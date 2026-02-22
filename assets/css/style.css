@@ -7,3 +7,34 @@
 }
 
 /* End Reset */
+
+/* Start Utility Classes */
+
+@font-face {
+    font-family: "Young Serif";
+    src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Outfit-SB";
+    src: url(../fonts/outfit/static/Outfit-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Outfit-B";
+    src: url(../fonts/outfit/static/Outfit-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Outfit-R";
+    src: url(../fonts/outfit/static/Outfit-Regular.ttf);
+}
+
+/* End Utility Classes */
+
+body {
+    background-color: #f3e5d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
