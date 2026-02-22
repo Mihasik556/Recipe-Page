@@ -30,6 +30,35 @@
     src: url(../fonts/outfit/static/Outfit-Regular.ttf);
 }
 
+html {
+    font-family: "Outfit-R";
+    color: #5f564d;
+    line-height: 150%;
+}
+
+.diff-heading {
+    font-family: "Young Serif";
+    line-height: 100%;
+}
+
+ul,
+ol {
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+li {
+    padding-left: 0.5rem;
+}
+
+.diff-heading,
+li::marker,
+td {
+    color: #854632;
+}
+
 /* End Utility Classes */
 
 body {
@@ -37,4 +66,50 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+main {
+    background-color: #fff7fb;
+}
+
+figure {
+    width: fit-content;
+}
+
+img {
+    width: 100%;
+}
+
+.recipe-card {
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.first-h {
+    color: #312e2c;
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+
+.prep-time {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.prep-time h3 {
+    font-family: "Outfit-SB";
+    color: #7a284e;
+    font-size: 1.25rem;
+    line-height: 100%;
 }
