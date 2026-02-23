@@ -38,19 +38,43 @@ html {
 
 .diff-heading {
     font-family: "Young Serif";
+    font-weight: 500;
+    font-size: 1.75rem;
     line-height: 100%;
 }
 
 ul,
 ol {
-    list-style-position: inside;
+    list-style-position: outside;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    padding-left: 0.5rem;
 }
 
-li {
-    padding-left: 0.5rem;
+ul {
+    list-style: none;
+}
+
+ul li {
+    align-items: center;
+    display: flex;
+}
+
+ul li::before {
+    display: block;
+    content: "•";
+    font-size: 1.3rem;
+    color: #854632;
+    margin-right: 1.7rem;
+}
+
+.prep-time ul li::before {
+    color: #7a284e;
+}
+
+li span {
+    font-family: "Outfit-B";
 }
 
 .diff-heading,
