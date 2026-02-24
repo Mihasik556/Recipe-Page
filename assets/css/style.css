@@ -49,32 +49,14 @@ ol {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding-left: 0.5rem;
 }
 
-ul {
-    list-style: none;
+hr {
+    border: 1px #e3ddd7 solid;
 }
 
-ul li {
-    align-items: center;
-    display: flex;
-}
-
-ul li::before {
-    display: block;
-    content: "•";
-    font-size: 1.3rem;
-    color: #854632;
-    margin-right: 1.7rem;
-}
-
-.prep-time ul li::before {
-    color: #7a284e;
-}
-
-li span {
-    font-family: "Outfit-B";
+.fake-hr {
+    border: 0;
 }
 
 .diff-heading,
@@ -86,7 +68,6 @@ td {
 /* End Utility Classes */
 
 body {
-    background-color: #f3e5d7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,6 +80,7 @@ main {
 
 figure {
     width: fit-content;
+    display: flex;
 }
 
 img {
@@ -136,4 +118,46 @@ img {
     color: #7a284e;
     font-size: 1.25rem;
     line-height: 100%;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0.5rem;
+}
+
+ul li {
+    align-items: center;
+    display: flex;
+}
+
+ul li::before {
+    display: block;
+    content: "•";
+    font-size: 1.3rem;
+    color: #854632;
+    margin-right: 1.7rem;
+}
+
+ol {
+    padding-left: 1.5rem;
+}
+
+ol li div {
+    margin-left: 1rem;
+}
+
+ol li::marker {
+    font-family: "Outfit-B";
+}
+
+.prep-time ul li::before {
+    color: #7a284e;
+}
+
+li span {
+    font-family: "Outfit-B";
+}
+
+tbody {
+    padding: 0.75rem;
 }
