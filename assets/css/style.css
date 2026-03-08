@@ -9,6 +9,9 @@
 /* End Reset */
 
 /* Start Utility Classes */
+* {
+    transition: all 0.3s ease;
+}
 
 @font-face {
     font-family: "Young Serif";
@@ -34,6 +37,7 @@ html {
     font-family: "Outfit-R";
     color: #5f564d;
     line-height: 150%;
+    font-size: 1rem;
 }
 
 .diff-heading {
@@ -55,10 +59,6 @@ hr {
     border: 1px #e3ddd7 solid;
 }
 
-.fake-hr {
-    border: 0;
-}
-
 .diff-heading,
 li::marker,
 td {
@@ -67,15 +67,12 @@ td {
 
 /* End Utility Classes */
 
-body {
+main {
+    background-color: #f3e5d7;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-main {
-    background-color: #fff7fb;
 }
 
 figure {
@@ -84,7 +81,7 @@ figure {
 }
 
 img {
-    width: 100%;
+    width: 375px;
 }
 
 .recipe-card {
@@ -92,6 +89,8 @@ img {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 375px;
+    background-color: #fff7fb;
 }
 
 .info-block {
@@ -158,6 +157,58 @@ li span {
     font-family: "Outfit-B";
 }
 
-tbody {
-    padding: 0.75rem;
+table hr {
+    margin: 0.58rem 0;
+    line-height: 150%;
+}
+
+table {
+    padding: 0 2rem;
+}
+
+th {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 150%;
+    text-align: left;
+}
+
+td {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        padding: 8rem;
+    }
+
+    .recipe-card {
+        width: 616px;
+        padding: 2.5rem 2.5rem;
+    }
+
+    figure {
+        width: 616px;
+        background-color: #fff7fb;
+        padding: 2.5rem 2.5rem 0 2.5rem;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 0.75rem;
+    }
+
+    .attribution {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .recipe-card {
+        width: 736px;
+    }
+
+    figure {
+        width: 736px;
+    }
 }
